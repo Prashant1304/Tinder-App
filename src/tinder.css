@@ -106,7 +106,7 @@ input::-webkit-calendar-picker-indicator {
     text-align: center;
 }
 .change{
-    border: 3px solid rgb(254, 60, 114) ;
+    /* border: 3px solid rgb(254, 60, 114) ; */
     height: 29px;
     width: 157px;
     position: relative;
@@ -115,7 +115,7 @@ input::-webkit-calendar-picker-indicator {
     
 }
 .contt .one{
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     height: 29px;
     width: 157px;
     position: relative;
@@ -157,3 +157,5 @@ input::-webkit-calendar-picker-indicator {
     text-align: -webkit-center;
     
 }
+
+

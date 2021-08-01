@@ -158,6 +158,7 @@ class Tinder extends Component {
   handleGenderColour=(e)=>{
     this.setState({show:e.target.value})
     e.target.className="change"
+    console.log(this.state.show)
   }
   handleShowGender=()=>{
     this.setState({toggle:!false})
@@ -405,7 +406,7 @@ class Tinder extends Component {
                   <div> 
                   {this.state.dataB.map((x,y)=>{
                     return <div key={y}>
-                       <img src={x.photo} style={{ borderRadius:"5px",position:"relative",top:"27px",height:"255px",width:"255px"}}></img>
+                       <img src={x.photo} className="animation" style={{ borderRadius:"5px",position:"relative",top:"27px",height:"255px",width:"255px"}}></img>
                        <p style={{color:"pink",position:"relative",bottom:"15px",right:"80px"}}><b> {x.name}</b>  &nbsp;&nbsp; {x.age}</p>
                        
                         {/* {console.log(x)} */}
