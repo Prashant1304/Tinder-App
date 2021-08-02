@@ -1,6 +1,7 @@
 import React,{Component} from "react"
 import "./tinder.css"
 
+
 var girls=[
   
     {
