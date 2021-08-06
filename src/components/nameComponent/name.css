@@ -1,0 +1,44 @@
+.Name-cont{
+    height: 39px;
+    width: 281px;
+    background: linear-gradient( #FF7457, #FC2A7B);
+    display: flex;
+    border-radius: 23px;
+    justify-content: center;
+    align-items: center;
+}
+.Name-cont-butt{
+    border: none;
+    background: linear-gradient( #FF7457, #FC2A7B);
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.Name-top{
+    padding-right: 207px;
+    font-size: 32px;
+    font-family: sans-serif;
+}
+.Name-middle {
+    display: flex;
+    flex-direction: column;
+    height: 218px;
+    justify-content: flex-end;
+}
+
+.Name-bottom {
+    display: flex;
+    height: 288px;
+    align-items: flex-end;
+    justify-content: center;
+}
+.Name-input {
+    border: none;
+    font-size: 20px;
+}
+
+.Name-line {
+    height: 2px;
+    width: 287px;
+    background-color: gray;
+}

@@ -1,0 +1,39 @@
+.birth-bottom {
+    display: flex;
+    height: 295px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.birth-cont{
+    height: 39px;
+    width: 281px;
+    background: linear-gradient( #FF7457, #FC2A7B);
+    display: flex;
+    border-radius: 23px;
+    justify-content: center;
+    align-items: center;
+}
+.birth-cont-butt{
+    border: none;
+    background: linear-gradient( #FF7457, #FC2A7B);
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.birth-top{
+    font-size: 36px;
+    font-family: sans-serif;
+}
+.birth-input{
+    font-size: 22px;
+    border: none;
+    background-color: white;
+    color: gray;
+}
+.birth-middle{
+    height: 204px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

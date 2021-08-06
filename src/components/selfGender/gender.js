@@ -1,32 +1,30 @@
 import React from "react"
+import "./gender.css"
 
 function Gender (props) {
     return(
-        <div className="diV">
-              <div>
+        <div >
+              <div className="gender-top">
               <h2>I am a</h2>
               </div>
-              <div className="gender" >
-              <div onClick={props.handleGenderColour}>
-            <div  className="contt">
-              <button className="one">MALE</button>
-            </div>
-            </div>
-              <div onClick={props.handleGenderColour}>
-            <div className="contt">
-              <button className="one">FEMALE</button>
-            </div>
+              <div className="gender-box-box"  >
+                <div className="gender-box">
+
+            
+            
+              <button className="gender-btn" >MALE</button>
+            
+            
+              <button className="gender-btn">FEMALE</button>
+            
+              <button className="gender-btn">TRANS</button>
+
+                </div>
               </div>
-              <div onClick={props.handleGenderColour}>
-            <div className="contt">
-              <button className="one">TRANS</button>
-            </div>
-              </div>
-              </div>
-              <div style={{position:"relative",left:"67px",top:"254px"}}>
-            <div className="cont">
-              <button style={{backgroundColor:"rgb(254, 60, 114)",border:"none"}} onClick={props.handleGender}>CONTINUE</button>
-            </div>
+              
+            <div className="gender-cont" >
+              <button  className="gender-cont-btn" onClick={props.handleGender}>CONTINUE</button>
+            
             </div>
             </div>
     )

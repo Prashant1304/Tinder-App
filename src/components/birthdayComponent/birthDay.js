@@ -1,18 +1,22 @@
 import React from "react"
+import "./birthday.css"
 
 function BirthDay (props) {
     return(
-        <div className="divvvvvv">
-            <div>
+        <div >
+          <div style={{padding:"1px 57px"}}>
+            <div className="birth-top">
             <h3>My birthday is</h3>
-            <div style={{position:"relative",top:"105px"}}>
-            <input style={{border:"none",color:"rgb(128,128,128)" }} type="date"></input>
-            <p style={{color:"rgb(169,169,169)",fontSize:"10px"}}>Your age will be public</p>
+            </div>
+
+            <div className="birth-middle" >
+            <input className="birth-input" type="date"></input>
+            <p style={{color:"rgb(169,169,169)",fontSize:"14px"}}>Your age will be public</p>
             </div>
             </div>
-            <div style={{position:"relative",left:"67px",top:"254px"}}>
-            <div className="cont">
-              <button style={{backgroundColor:"rgb(254, 60, 114)",border:"none"}} onClick={props.handelBirth}>CONTINUE</button>
+            <div className="birth-bottom">
+            <div className="birth-cont">
+              <button className="birth-cont-butt"  onClick={props.handelBirth}>CONTINUE</button>
             </div>
             </div>
           </div>

@@ -91,12 +91,11 @@ class Tinder extends Component {
 
     this.setState({ShowGenderDiv:!false})
   }
-
   handleGenderColour=(e)=>{
     this.setState({show:e.target.value})
-    e.target.className="change"
     console.log(this.state.show)
   }
+
   handleShowGender=()=>{
     this.setState({toggle:!false})
     this.setState({ShowGenderDiv:!true})
@@ -154,7 +153,6 @@ class Tinder extends Component {
     return(
       <div className="aLL">
 
-
         {this.state.tinderDiv&&
         <div className="header">
         <HomeScreen
@@ -197,33 +195,40 @@ class Tinder extends Component {
 
 
                 {this.state.nameDiv&&
+                <div className="Name">
                   <Name
                   handleNameValue = {this.handleNameValue}
                   handleName = {this.handleName}
                   name ={this.state.name}
                   />
+                  </div>
           }
           
           {this.state.birthdayDiv&&
+          <div className="birthday">
           <BirthDay
           handelBirth ={this.handelBirth}
           />
+          </div>
           }
             
             {this.state.genderDiv&&
+            <div className="gender">
             <Gender
-            handleGenderColour= {this.handleGenderColour}
             handleGender= {this.handleGender}
+            handleGenderColour= {this.handleGenderColour}
             />
-            
+            </div>
             }
 
               {this.state.ShowGenderDiv&&
+              <div className="showGender">
               <ShowGender
-              handleGenderColour ={this.handleGenderColour}
               handleShowGender ={this.handleShowGender}
+              handleGenderColour= {this.handleGenderColour}
+
               />
-            
+              </div>
             }
             {this.state.toggle&&
                 <div className="nope">

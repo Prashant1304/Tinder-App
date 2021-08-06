@@ -1,0 +1,42 @@
+.showGender-top{
+    font-family: sans-serif;
+    font-size: 35px;
+}
+.showGender-middle{
+    height: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 344px;
+    align-items: center;
+}
+.showGender-middle-box{
+    height: 307px;
+    display: flex;
+    align-items: flex-end;
+}
+.showGender-bottom{    
+    height: 272px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.showGender-btn{
+
+    height: 37px;
+    width: 296px;
+    border-radius: 19px;
+    font-size: 20px;
+    background-color: white;
+    color: gray;
+    border-color: gray;
+}
+.showGender-cont-btn {
+    height: 37px;
+    width: 236px;
+    border-radius: 19px;
+    font-size: 20px;
+    background: linear-gradient( #FF7457, #FC2A7B);
+    color: white;
+    border:none;
+}

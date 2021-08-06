@@ -1,27 +1,30 @@
 import React from "react"
 import {girls} from "../girlsData/girls"
+import "./showGender.css"
 function ShowGender (props) {
     return (
-        <div className="diVV">
-            <div>
+        <div >
+
+            <div className="showGender-top">
               <h2>Show Me</h2>
               </div>
-              <div className="gender" >
-              <div onClick={props.handleGenderColour}>
-            <div className="contt">
-              <button className="one" value="MALE">MALE</button>
+
+              <div className="showGender-middle-box"  >
+              <div className="showGender-middle" >
+            <div onClick={props.handleGenderColour}>
+              <button className="showGender-btn" value="MALE">MALE</button>
             </div>
-            </div>
-              <div onClick={props.handleGenderColour}>
-            <div   className="contt" >
-              <button    className="one" value="FEMALE">FEMALE</button>
-            </div>
+
+            <div   onClick={props.handleGenderColour} >
+              <button    className="showGender-btn" value="FEMALE">FEMALE</button>
               </div>
               </div>
-              <div style={{position:"relative",left:"67px",top:"254px"}}>
-            <div className="cont">
-              <button onClick={props.handleShowGender} style={{backgroundColor:"rgb(254, 60, 114)",border:"none"}}>CONTINUE</button>
-            </div>
+              </div>
+
+            <div className="showGender-bottom">
+
+              <button className="showGender-cont-btn" onClick={props.handleShowGender} >CONTINUE</button> 
+            
             </div>
             </div>
     )

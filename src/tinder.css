@@ -12,7 +12,7 @@
     display: flex;
     /* flex-direction: column; */
     align-items: flex-start;
-    background: linear-gradient( #FF7457, #FC2A7B);;
+    background: linear-gradient( #FF7457, #FC2A7B);
  
 }
 
@@ -38,6 +38,46 @@
 .terms {
 
     padding: 28px;
+    width: 418px;
+    height: 581px;
+    border-radius: 19px;
+    display: flex;
+    align-items: flex-start;
+    background-color:white;
+}
+.Name{
+
+    padding: 32px;
+    width: 418px;
+    height: 581px;
+    border-radius: 19px;
+    display: flex;
+    align-items: flex-start;
+    background-color:white;
+
+}
+.birthday {
+    padding: 32px;
+    width: 418px;
+    height: 581px;
+    border-radius: 19px;
+    display: flex;
+    align-items: flex-start;
+    background-color:white;
+}
+.gender{
+    padding: 32px;
+    width: 418px;
+    height: 581px;
+    border-radius: 19px;
+    display: flex;
+    align-items: flex-start;
+    background-color:white;
+}
+
+.showGender{
+
+    padding: 32px;
     width: 418px;
     height: 581px;
     border-radius: 19px;

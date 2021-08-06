@@ -1,0 +1,44 @@
+.gender-btn {
+    height: 37px;
+    width: 236px;
+    border-radius: 19px;
+    font-size: 20px;
+    background-color: white;
+    color: gray;
+    border-color: gray;
+}
+.gender-top{
+    font-size: 26px;
+    font-family: sans-serif;
+    padding-left: 22px;
+}
+.gender-box {
+    display: flex;
+    flex-direction: column;
+    height: 164px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 341px;
+}
+
+.gender-box-box {
+    height: 308px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gender-cont-btn {
+    height: 37px;
+    width: 236px;
+    border-radius: 19px;
+    font-size: 20px;
+    background: linear-gradient( #FF7457, #FC2A7B);
+    color: white;
+    border:none;
+}
+.gender-cont{
+    height: 258px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
