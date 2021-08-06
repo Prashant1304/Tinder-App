@@ -22,7 +22,7 @@ class Tinder extends Component {
     birthdayDiv:false,
     genderDiv:false,
     ShowGenderDiv:false,
-    phoneNumValue:"",
+    phoneNumValue:"7208801223",
     phoneNumOtp:"",
     name:"",
     toggle:false,
@@ -44,10 +44,10 @@ class Tinder extends Component {
     this.setState({numberDiv:!true})
     this.setState({codeDiv:!false})
     this.setState({tinderDiv:!true})
-    alert(`your OTP for ${this.state.phoneNumValue} is 5468`)
+    alert(`your OTP for ${this.state.phoneNumValue} is 546828`)
   }
   handleResend=()=>{
-    alert(`your OTP for ${this.state.phoneNumValue} is 5468`)
+    alert(`your OTP for ${this.state.phoneNumValue} is 546828`)
   }
   handleNumberData=(e)=>{
     this.setState({phoneNumValue:e.target.value})
@@ -58,7 +58,7 @@ class Tinder extends Component {
 
   }
   handleCode=()=>{
-    if(this.state.phoneNumOtp==5468){
+    if(this.state.phoneNumOtp==546828){
       this.setState({tinderDiv:!true})
       this.setState({codeDiv:!true})
       this.setState({termsDiv:!false})
@@ -174,7 +174,7 @@ class Tinder extends Component {
         }
           
             {this.state.codeDiv&&
-
+              <div className="otp">
               <Otp
 
                  handleResend ={this.handleResend}
@@ -184,14 +184,15 @@ class Tinder extends Component {
                  phoneNumOtp= {this.state.phoneNumOtp}
             
               />
-
+              </div>
           }
 
               {this.state.termsDiv&&
+              <div className="terms">
               <Terms
               handleTerms= {this.handleTerms}
               />
-                
+                </div>
           }
 
 

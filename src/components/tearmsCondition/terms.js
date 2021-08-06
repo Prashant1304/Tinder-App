@@ -1,15 +1,17 @@
 import React, { Component } from "react"
+import "./terms.css"
+
 
 class Terms extends Component {
     render() {
         return(
-            <div className="divvvv">
-            <div style={{textAlignLast:"center"}} >
+            <div >
+            <div  >
             <p>&#128293;</p>
             <h3>WELCOME TO TINDER</h3>
-            <p style={{fontSize:"15px"}}>Please Follow These House Rules</p>
+            <p >Please Follow These House Rules</p>
             </div>
-            <div className="terms"> 
+            <div > 
             <div>
              <p> <i style={{color:"red"}}>&#x2713; </i>BE yourself  </p>
              <p style={{fontSize:"13px"}}>Make sure your photo,age,bio are true to who you are</p>
@@ -27,9 +29,9 @@ class Terms extends Component {
              <p style={{fontSize:"13px"}}>Always report bad behavior.</p>
             </div>
             </div>
-            <div style={{position:"relative",top:"43px"}}>
-            <div className="cont">
-              <button style={{backgroundColor:"rgb(254, 60, 114)",border:"none"}} onClick={this.props.handleTerms}>I AGREE</button>
+            <div >
+            <div >
+              <button  onClick={this.props.handleTerms}>I AGREE</button>
             </div>
             </div>
           </div>

@@ -5,7 +5,7 @@
 }
 .header {
     width: 418px;
-    height: 627px;
+    height: 727px;
     border-radius: 19px;
 
     /* flex-wrap: wrap; */
@@ -24,5 +24,25 @@
     display: flex;
     align-items: flex-start;
     background-color:white;;
- 
+}
+
+.otp {
+    padding: 28px;
+    width: 418px;
+    height: 581px;
+    border-radius: 19px;
+    display: flex;
+    align-items: flex-start;
+    background-color:white;
+}
+
+.terms {
+
+    padding: 28px;
+    width: 418px;
+    height: 581px;
+    border-radius: 19px;
+    display: flex;
+    align-items: flex-start;
+    background-color:white;
 }

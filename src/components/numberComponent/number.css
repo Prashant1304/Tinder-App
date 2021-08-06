@@ -1,0 +1,30 @@
+.Npad {
+    padding: 31px 26px;
+}
+.Number-Top {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.cont-btn {
+    background: linear-gradient( #FF7457, #FC2A7B);
+    text-align-last: center;
+    border-radius: 25px;
+    height: 40px;
+    display: flex;
+    width: 349px;
+    justify-content: center;
+}
+.Number-input{
+    display: flex;
+    justify-content: space-around;
+    width: 281px;
+}
+.Number-move{
+    height: 161px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.cont{
+   background:linear-gradient( #FF7457, #FC2A7B)
+}

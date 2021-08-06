@@ -1,23 +1,27 @@
 import React from "react"
+import "./otp.css"
 
 function Otp (props) {
     return(
-        <div className="divvv">
-            <div style={{textAlignLast:"center"}}>
+        <div >
+            <div className="otp-top">
               <h3>My Code is</h3>
             </div>
-            <div onClick={props.handleResend} style={{fontSize:"11px",color:"rgb(169,169,169)",textAlignLast:"center",position:"relative",bottom:"5px" }}>
-              {props.phoneNumValue}   RESEND
-            </div>
-            <div>
-              <input onChange={props.handleNumberOtp} value={props.phoneNumOtp} type="number"></input>
-            </div>
-            <div style={{position:"relative",top:"15px"}}>
 
-            <div className="cont" >
-              <button style={{backgroundColor:"rgb(254, 60, 114)",border:"none"}} onClick={props.handleCode}>CONTINUE</button>
+            <div className="otp-resend"  onClick={props.handleResend} >
+
+              {props.phoneNumValue} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  RESEND
+            
             </div>
-          </div>
+            
+            <div className="otp-contnar">
+              <input className="otp-inpot" onChange={props.handleNumberOtp} value={props.phoneNumOtp} type="number"></input>
+            </div>
+            <div className="otp-continue-container">
+            <div className="cont-btn" >
+              <button  className="cont" style= {{border:"none",backgroundColor:"#E6E9F0",fontSize:"15px",color:"white" }} onClick={props.handleCode}>CONTINUE</button>
+              </div>
+            </div>
           </div>
     )
 }
