@@ -1,0 +1,30 @@
+.terms-top {
+    text-align-last: center;
+}
+.terms-middle {
+    display: flex;
+    flex-direction: column;
+    height: 518px;
+}
+.terms-bottom {  
+    height: 33px;
+    display: flex;
+    width: 286px;
+    background: linear-gradient( #FF7457, #FC2A7B);
+    border-radius: 31px;
+    justify-content: center;
+
+}
+.terms-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 343px;
+
+}
+.terms-btn {
+    background: linear-gradient( #FF7457, #FC2A7B);
+    border: none;
+    color: white;
+    font-size: 18px;
+}
