@@ -1,5 +1,7 @@
 
 import React, { Component } from "react"
+import "./boys.css"
+
 var boys=[
     {
       id:6,
@@ -79,7 +81,7 @@ class Boys extends Component {
         <div> 
             {this.state.dataB.map((x,y)=>{
               return <div key={y}>
-                 <img src={x.photo} className="animation" style={{ borderRadius:"5px",position:"relative",top:"27px",height:"365px",width:"365px"}}></img>
+                 <img src={x.photo}  style={{ borderRadius:"5px",position:"relative",top:"27px",height:"365px",width:"365px"}}></img>
                  <p style={{color:"black",position:"relative",bottom:"31px",fontSize:"22px"}}><b> {x.name}</b>  &nbsp;&nbsp; {x.age}</p>
                  
                   {/* {console.log(x)} */}

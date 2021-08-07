@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import "./girls.css"
 
 var girls=[
   
@@ -84,8 +85,8 @@ class Girls extends Component {
             <div >
                     {this.state.dataG.map((x,y)=>{
                       return <div  key={y}>
-                       <img src={x.photo} style={{borderRadius:"5px", position:"relative",top:"27px",height:"255px",width:"255px"}}></img>
-                       <p style={{color:"pink",position:"relative",bottom:"15px",right:"80px" }}><b> {x.name}</b>  &nbsp;&nbsp; {x.age}</p>
+                       <img src={x.photo} style={{ borderRadius:"5px",position:"relative",top:"27px",height:"365px",width:"365px"}}></img>
+                       <p style={{color:"black",position:"relative",bottom:"31px",fontSize:"22px"}}><b> {x.name}</b>  &nbsp;&nbsp; {x.age}</p>
                        
                         {/* {console.log(x)} */}
                       </div>

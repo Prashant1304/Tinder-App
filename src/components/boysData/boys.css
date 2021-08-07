@@ -1,0 +1,19 @@
+.respL{
+    color: green;
+    transform: rotate(-309deg);
+    font-size: 23px;
+    font-family: sans-serif;
+    position: fixed;
+    top: 49px;
+    right: 30px;
+}
+
+.respR{
+    color: red;
+    transform: rotate(-309deg);
+    font-size: 23px;
+    font-family: sans-serif;
+    position: fixed;
+    top: 62px;
+    right: 30px;
+}
