@@ -14,14 +14,14 @@ import Boys,{boys} from "./components/boysData/boys"
 
 class Tinder extends Component {
   state={
-    tinderDiv:false,
+    tinderDiv:true,
     numberDiv:false,
     codeDiv:false,
     termsDiv:false,
     nameDiv:false,
     birthdayDiv:false,
     genderDiv:false,
-    ShowGenderDiv:true,
+    ShowGenderDiv:false,
     phoneNumValue:"7208801223",
     phoneNumOtp:"",
     name:"",
