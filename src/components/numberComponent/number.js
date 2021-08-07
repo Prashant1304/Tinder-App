@@ -11,6 +11,7 @@ function NumberPart (props) {
           <div className="Number-input" >
             IN +91 <input style={{border:"none",fontSize:"16px"}} type="number" onChange={props.handleNumberData} value={props.phoneNumValue} placeholder="Phone Number"></input>
           </div>
+            <div className="P-N-line"></div>
           <div >
           <div ><p style={{fontSize:"15px",fontFamily:"sans-serif",color:"gray" }}> when you tap continue,Tinder will send a text with verification code.Message and data rate may apply </p></div>
           <div className="cont-btn" >

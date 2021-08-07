@@ -3,7 +3,7 @@
     display: flex;
     font-family: sans-serif;
     flex-direction: column;
-    height: 184px;
+    height: 244px;
     color: white;
     font-size: 21px;
     justify-content: flex-end;
@@ -11,7 +11,7 @@
 }
 .header-below{
     display: flex;
-    height: 494px;
+    height: 413px;
     padding: 15px;
     flex-direction: column;
     align-items: center;

@@ -54,17 +54,43 @@ class Boys extends Component {
         this.setState({dataB:filter2})
     
     }
-    
+    handleClickLike=()=>{
+      var inc =Math.floor(Math.random()*5)
+      this.setState({respL:!false})
+      setTimeout(() => { this.setState ({respL:false}); },300);
+      
+      var filter2=boys.filter((x)=>{
+        return x==boys[inc]
+      })
+      this.setState({dataB:filter2})
+      }
+    handleClickRejcct=()=>{
+      var inc =Math.floor(Math.random()*5)
+      this.setState({respR:!false})
+      setTimeout(() => { this.setState ({respR:false}); },300);
+      
+      var filter2=boys.filter((x)=>{
+        return x==boys[inc]
+      })
+      this.setState({dataB:filter2})
+    }
     render() {
-        return(<div> 
+        return(
+        <div> 
             {this.state.dataB.map((x,y)=>{
               return <div key={y}>
-                 <img src={x.photo} className="animation" style={{ borderRadius:"5px",position:"relative",top:"27px",height:"255px",width:"255px"}}></img>
-                 <p style={{color:"pink",position:"relative",bottom:"15px",right:"80px"}}><b> {x.name}</b>  &nbsp;&nbsp; {x.age}</p>
+                 <img src={x.photo} className="animation" style={{ borderRadius:"5px",position:"relative",top:"27px",height:"365px",width:"365px"}}></img>
+                 <p style={{color:"black",position:"relative",bottom:"31px",fontSize:"22px"}}><b> {x.name}</b>  &nbsp;&nbsp; {x.age}</p>
                  
                   {/* {console.log(x)} */}
                 </div>
-              })}</div>
+              })}
+              <div>
+              {this.state.respL&& <div  className="respL"><b>LIKE</b></div>}
+              {this.state.respR&& <div className="respR"><b> REJECt</b></div>}    
+              </div>
+              <div className="but"> <button onClick={this.handleClickLike} style={{color:"green",borderRadius:"25px",textAlignLast:"center",height:"31px",width:"31px"}}>&#10004;</button> <button onClick={this.handleClickRejcct} style={{color:"red",borderRadius:"25px",height:"31px",width:"31px"}}>&#10005;</button></div>
+              </div>
         )
     }
 }

@@ -9,7 +9,7 @@ function HomeScreen (props) {
       <div className="header-below" >
         <div>
 
-        <p style={{fontSize: "11px",textAlign:"center",color:"white"}}>By clicking login,you agree with our Terms.Learn how we process your data in private policy </p>
+        <p style={{fontSize: "13px",textAlign:"center",color:"white"}}>By clicking login,you agree with our Terms.Learn how we process your data in private policy </p>
         </div>
         <div className ="login">
           <div className="login-btn">

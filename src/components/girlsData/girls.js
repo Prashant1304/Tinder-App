@@ -42,6 +42,8 @@ class Girls extends Component {
         dataG:girls,
         respL:false,
         respR:false,
+        toggleButton:true,
+
     }
     componentDidMount(){
         var inc =Math.floor(Math.random()*5)
@@ -53,7 +55,30 @@ class Girls extends Component {
         this.setState({dataG:filter1})
     
     }
-
+    handleClickLike=()=>{
+      var inc =Math.floor(Math.random()*5)
+      this.setState({respL:!false})
+      setTimeout(() => { this.setState ({respL:false}); },300);
+      
+      var filter1=girls.filter((x)=>{
+        // console.log(girls[inc])
+        return x==girls[inc]
+      })
+      this.setState({dataG:filter1})
+    }
+    handleClickRejcct=()=>{
+      var inc =Math.floor(Math.random()*5)
+      this.setState({respR:!false})
+      setTimeout(() => { this.setState ({respR:false}); },300);
+      
+      var filter1=girls.filter((x)=>{
+        // console.log(girls[inc])
+        return x==girls[inc]
+      })
+      this.setState({dataG:filter1})
+      
+    }
+    
     render() {
         return(
             <div >
@@ -65,7 +90,12 @@ class Girls extends Component {
                         {/* {console.log(x)} */}
                       </div>
                     })}
-                  
+                  {this.state.respL&& <div  className="respL"><b>LIKE</b></div>}
+                  {this.state.respR&& <div className="respR"><b> REJECt</b></div>}
+               
+                  <div>
+                  <div className="but"> <button onClick={this.handleClickLike} style={{color:"green",borderRadius:"25px",textAlignLast:"center",height:"31px",width:"31px"}}>&#10004;</button> <button onClick={this.handleClickRejcct} style={{color:"red",borderRadius:"25px",height:"31px",width:"31px"}}>&#10005;</button></div>
+                  </div>
                   </div>
         )
     }

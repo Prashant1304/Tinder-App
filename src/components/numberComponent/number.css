@@ -28,3 +28,10 @@
 .cont{
    background:linear-gradient( #FF7457, #FC2A7B)
 }
+.P-N-line{
+    height: 3px;
+    background-color: gray;
+    width: 214px;
+    position: relative;
+    left: 66px;
+}

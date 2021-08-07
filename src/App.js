@@ -116,37 +116,7 @@ class Tinder extends Component {
     })
     this.setState({dataB:filter2})
   }
-  handleClickLike=()=>{
-    var inc =Math.floor(Math.random()*5)
-    this.setState({respL:!false})
-    setTimeout(() => { this.setState ({respL:false}); },300);
-    
-    var filter1=girls.filter((x)=>{
-      // console.log(girls[inc])
-      return x==girls[inc]
-    })
-    var filter2=boys.filter((x)=>{
-      return x==boys[inc]
-    })
-    this.setState({dataB:filter2})
-    this.setState({dataG:filter1})
-  }
-  handleClickRejcct=()=>{
-    var inc =Math.floor(Math.random()*5)
-    this.setState({respR:!false})
-    setTimeout(() => { this.setState ({respR:false}); },300);
-    
-    var filter1=girls.filter((x)=>{
-      // console.log(girls[inc])
-      return x==girls[inc]
-    })
-    var filter2=boys.filter((x)=>{
-      return x==boys[inc]
-    })
-    this.setState({dataB:filter2})
-    this.setState({dataG:filter1})
-    
-  }
+  
   render() {
     // console.log(this.state.dataB[0])
     console.log()
@@ -236,18 +206,13 @@ class Tinder extends Component {
                 {this.state.toggleG&&
                 <div>
                  <Girls/>
-                 {this.state.respL&& <div  className="respL"><b>LIKE</b></div>}
-                 {this.state.respR&& <div className="respR"><b> REJECt</b></div>}
-                  
                 </div>  }
+                
                   {this.state.toggleB&&
                   <div> 
                   <Boys/>
-                    {this.state.respL&& <div  className="respL"><b>LIKE</b></div>}
-                    {this.state.respR&& <div className="respR"><b> REJECt</b></div>}
-                  </div>}
+                    </div>}
                 </div>
-               {this.state.toggleButton&&<div className="but"> <button onClick={this.handleClickLike} style={{color:"green",borderRadius:"25px",textAlignLast:"center",height:"31px",width:"31px"}}>&#10004;</button> <button onClick={this.handleClickRejcct} style={{color:"red",borderRadius:"25px",height:"31px",width:"31px"}}>&#10005;</button></div>}
                     </div>}
                     
       </div>

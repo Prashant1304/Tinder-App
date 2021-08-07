@@ -85,3 +85,8 @@
     align-items: flex-start;
     background-color:white;
 }
+
+.but {
+    display: flex;
+    justify-content: center;
+}
