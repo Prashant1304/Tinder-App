@@ -2,9 +2,9 @@ import React, { Component } from "react"
 import "./name.css"
 
 class Name extends Component {
-    render() {
-        return(
-            <div  >
+    render () {
+        return (
+          <div>
             <div className="Name-top">
               <h3>My first name is </h3>
             </div>
@@ -14,9 +14,9 @@ class Name extends Component {
               <p style={{fontSize:"16px",color:"gray"}}>This is how it wil appear in Tinder and you will not be able to change it</p>
             </div>
             <div className="Name-bottom">
-            <div className="Name-cont">
-              <button className="Name-cont-butt" onClick={this.props.handleName} >CONTINUE</button>
-            </div>
+              <div className="Name-cont">
+                <button className="Name-cont-butt" onClick={this.props.handleName} >CONTINUE</button>
+              </div>
             </div>
           </div>
         )
